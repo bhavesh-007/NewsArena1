@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    tools:context=".item"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="6dp"
+       android:layout_marginTop="2dp"
+        app:cardElevation="5dp"
+        android:id="@+id/cardview"
+        android:clipToPadding="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mainhead"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColor="@color/black"
+                android:text="main heading here"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="6"
+                    android:padding="5dp"
+                    android:id="@+id/contents"
+                    android:textSize="15sp"
+                    android:text="main content"/>
+                <ImageView
+                    android:layout_marginRight="10dp"
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imagee"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="by bhavesh"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:id="@+id/author"
+                android:textColor="@color/purple_200"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/timeee"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:text="published at"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
